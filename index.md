@@ -24,14 +24,18 @@ Este sitio web recopila guías detalladas, metodologías y explicaciones paso a 
 
 ---
 
-## 🚀 Últimos Walkthroughs Publicados
+## Mis Guías de CTF
 
-| Máquina / Módulo | Dificultad | Sistema operativo / Temática | Enlace |
-| :--- | :---: | :--- | :--- |
-| **Nombre de Máquina 1** | 🟨 Media | Linux / Web / AD | [Ver Walkthrough](./maquinas/maquina-1.md) |
-| **Nombre de Módulo 1** | 🟩 Fácil | Fundamentos de Redes | [Ver Apuntes](./modulos/modulo-1.md) |
-| **Nombre de Máquina 2** | 🟥 Difícil | Windows / Buffer Overflow | [Ver Walkthrough](./maquinas/maquina-2.md) |
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d/%m/%Y" }}
+    </li>
+  {% endfor %}
+</ul>
 
 ---
 
 > **Nota ética:** Todos los walkthroughs de máquinas publicados corresponden exclusivamente a contenidos **retirados** de Hack The Box, respetando las normativas de la plataforma. Los módulos de la Academia se enfocan en la explicación conceptual y metodológica sin revelar banderas (*flags*) directas.
+
+
