@@ -27,7 +27,7 @@ Este sitio web recopila guías detalladas, metodologías y explicaciones paso a 
 ## Mis Guías de CTF
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:5 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d/%m/%Y" }}
     </li>
