@@ -26,5 +26,5 @@ nmap -p 22,80,110,139,143,445,31337 -sC 10.129.163.178
 ```
 
 
-![HostDiscovery2](<img width="1007" height="762" alt="Captura de pantalla 2026-09-13 220441" src="https://github.com/user-attachments/assets/5dff18ba-5b54-412b-bfac-498653c7a4c7" />)
+<img width="1007" height="762" alt="Captura de pantalla 2026-09-13 220441" src="https://github.com/user-attachments/assets/5dff18ba-5b54-412b-bfac-498653c7a4c7" />
 Although we scan all open ports, it is only necessary to scan ports 139 and 445 to find the hostname; which is NIX-NMAP-DEFAULT
