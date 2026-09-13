@@ -29,7 +29,7 @@ Este sitio web recopila guías detalladas, metodologías y explicaciones paso a 
 <ul>
   {% for post in site.posts limit:5 %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d/%m/%Y" }}
+     <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%d/%m/%Y" }}
     </li>
   {% endfor %}
 </ul>
