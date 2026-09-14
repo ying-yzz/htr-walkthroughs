@@ -30,6 +30,8 @@ nmap -p 22,80,110,139,143,445,31337 -sC <IP target>
 
 Although we scan all open ports, it is only necessary to scan ports 139 and 445 to find the hostname; which is NIX-NMAP-DEFAULT
 
+---
+
 # Saving the Results
 * *Question 1*
 *  *Perform a full TCP port scan on your target and create an HTML report. Submit the number of the highest port as the answer.*
