@@ -6,7 +6,7 @@ title: "Network Enumeration with Nmap Answer"
   * *Based on the last result, find out which operating system it belongs to. Submit the name of the operating system as result.*
   * *HINT: The information that gives us such an indication is Time-To-Live (TTL). There exist a lot of different overviews with different protocols giving us an overview of which systems work specific TTL values.*
 
-<img width="1000" height="370" alt="Captura de pantalla 2026-09-13 174229" src="https://github.com/user-attachments/assets/b4ee2b9f-e9ee-4c0a-a7a1-7b71f264ea0d" />
+<img width="700" height="259" alt="Captura de pantalla 2026-09-13 174229" src="https://github.com/user-attachments/assets/b4ee2b9f-e9ee-4c0a-a7a1-7b71f264ea0d" />
 
 Based on the image, our IP is 10.10.14.2 and we sent an echo request with a TTL = 255. Therefore, the target IP replies with a TTL = 128. A quick Google search shows that the OS used is likely Windows.
 
@@ -22,7 +22,7 @@ We use the -p- flag to scan all 65,535 ports
 * *Question 2*
   *  *Enumerate the hostname of your target and submit it as the answer. (case-sensitive)*
 ```bash
-nmap -p 22,80,110,139,143,445,31337 -sC 10.129.163.178
+nmap -p 22,80,110,139,143,445,31337 -sC <IP target>
 ```
 
 
