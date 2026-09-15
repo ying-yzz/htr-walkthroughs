@@ -60,6 +60,7 @@ nmap -p- <IP target>
 ```
 To know all the useful ports: 
 
+```text
 PORT      STATE SERVICE
 22/tcp    open  ssh
 80/tcp    open  http
@@ -90,6 +91,7 @@ nmap -p- <IP target>
 ```
 To known all the useful ports: 
 
+```text
 PORT      STATE SERVICE
 22/tcp    open  ssh
 80/tcp    open  http
@@ -120,6 +122,7 @@ Using this command we can find the previous flag and the new flag in the port 31
 nmap -p- <IP target>
 ```
 
+```text
 PORT      STATE SERVICE
 22/tcp    open  ssh
 80/tcp    open  http
@@ -148,6 +151,7 @@ sudo changes the nmap determinate behavior and perform a SYN scan instead of per
 -T2 Configures the timing template. Nmap has six levels, from -T0 to -T5. The -T2 level is called Polite and deliberately slows down the scan by introducing pauses between sent packets. By not bombarding the server all at once, you avoid triggering IDS alarms based on rapid traffic volume.
 -D RND:5 Enables the use of Decoys. It instructs Nmap to generate 5 random IP addresses (RND:5) and mix them with your real IP address. If the server administrator analyzes the logs, they will see that 6 different machines are scanning it at the same time, making your real IP blend in with the noise
 
+```text
 PORT    STATE    SERVICE
 21/tcp  open     ftp
 22/tcp  open     ssh
@@ -173,6 +177,7 @@ sudo nmap -sU -p 53 -sV <IP target>
 sudo nmap -T2 -D RND:5 <IP target>
 ```
 
+```text
 PORT   STATE SERVICE
 22/tcp open  ssh
 80/tcp open  http
@@ -184,6 +189,7 @@ sudo nmap <IP target> --source-port 53
 ```
 --source-port 53 it forces all packets leaving your machine to carry the "tag" indicating they originate from port 53. Since this is the universal port for the DNS service, many firewalls are configured with permissive rules and allow the scan to pass through, letting you see ports that would normally be blocked
 
+```text
 PORT      STATE SERVICE
 22/tcp    open  ssh
 80/tcp    open  http
