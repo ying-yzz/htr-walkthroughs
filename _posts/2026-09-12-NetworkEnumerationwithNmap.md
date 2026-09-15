@@ -69,6 +69,7 @@ PORT      STATE SERVICE
 143/tcp   open  imap
 445/tcp   open  microsoft-ds
 31337/tcp open  Elite
+```
 
 ```bash
 nmap -p 22,80,110,139,143,445,31337 -sV -sC 10.129.166.14
@@ -100,6 +101,7 @@ PORT      STATE SERVICE
 143/tcp   open  imap
 445/tcp   open  microsoft-ds
 31337/tcp open  Elite
+```
 
 ```bash
 nmap -p 22,80,110,139,143,445,31337 -A <IP target>
@@ -127,6 +129,7 @@ PORT      STATE SERVICE
 22/tcp    open  ssh
 80/tcp    open  http
 10001/tcp open  scp-config
+```
 
 We'll scan the port 22 because normally can give us more information about the host
 
@@ -161,6 +164,7 @@ PORT    STATE    SERVICE
 139/tcp open     netbios-ssn
 143/tcp open     imap
 445/tcp filtered microsoft-ds
+```
 
 ```bash
 sudo nmap -sU -p 53 -sV <IP target>
@@ -181,6 +185,7 @@ sudo nmap -T2 -D RND:5 <IP target>
 PORT   STATE SERVICE
 22/tcp open  ssh
 80/tcp open  http
+```
 
 We didn't get useful information. Instead, we'll use another command
 
@@ -194,6 +199,7 @@ PORT      STATE SERVICE
 22/tcp    open  ssh
 80/tcp    open  http
 50000/tcp open  ibm-db2
+```
 
 We found a new port.
 
